@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BookingSystem"
+             x:Class="BookingSystem.MainPage">
+
+    <StackLayout Margin="10">
+        <Label x:Name="mainTitle" Text="Foyle Cinemas" FontSize="Medium" Margin="10" HorizontalTextAlignment="Center"/>
+        
+        <SearchBar x:Name="mainSearchbar" Placeholder="Type here to search..." FontAttributes="Italic"/>
+
+        <Grid x:Name="mainGrid" RowSpacing="5" ColumnSpacing="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- First Row -->
+            <Button x:Name="Button1" Text="View All Movies" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" WidthRequest="45"/>
+            <Button x:Name="Button2" Text="Comedy" Grid.Row="0" Grid.Column="1" WidthRequest="45"/>
+            <Button x:Name="Button3" Text="Horror" Grid.Row="0" Grid.Column="2" WidthRequest="45"/>
+
+            <!-- Second Row -->
+            <Button x:Name="Button4" Text="Action" Grid.Row="1" Grid.Column="0" WidthRequest="45"/>
+            <Button x:Name="Button5" Text="Romance" Grid.Row="1" Grid.Column="1" WidthRequest="45"/>
+            <Button x:Name="Button6" Text="Thriller" Grid.Row="1" Grid.Column="2" WidthRequest="45"/>
+
+            <!-- Third Row -->
+            <Button x:Name="Button7" Text="Adventure" Grid.Row="2" Grid.Column="0" WidthRequest="45"/>
+            <Button x:Name="Button8" Text="Sci-fi" Grid.Row="2" Grid.Column="1" WidthRequest="45"/>
+            <Button x:Name="Button9" Text="Animation" Grid.Row="2" Grid.Column="2" WidthRequest="45"/>
+
+            <!-- Fourth Row -->
+            <Button x:Name="Button10" Text="Drama" Grid.Row="3" Grid.Column="0" WidthRequest="45"/>
+            <Button x:Name="Button11" Text="Family" Grid.Row="3" Grid.Column="1" WidthRequest="45"/>
+            <Button x:Name="Button12" Text="Documentary" Grid.Row="3" Grid.Column="2" WidthRequest="45"/>
+        </Grid>
+
+        <Label x:Name="aboutText" Text="About" FontSize="Micro" TextColor="DeepSkyBlue" Margin="10" HorizontalTextAlignment="Center">
+            <!--<Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding AboutCommand}" />
+            </Label.GestureRecognizers>-->
+        </Label>
+    </StackLayout>
+</ContentPage>
