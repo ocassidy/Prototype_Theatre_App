@@ -13,5 +13,10 @@ namespace BookingSystem
         {
             InitializeComponent();
         }
+
+        private void ViewAllBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MovieListView());
+        }
     }
 }

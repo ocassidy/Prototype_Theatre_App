@@ -23,24 +23,24 @@
             </Grid.ColumnDefinitions>
 
             <!-- First Row -->
-            <Button x:Name="Button1" Text="View All Movies" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" WidthRequest="45"/>
-            <Button x:Name="Button2" Text="Comedy" Grid.Row="0" Grid.Column="1" WidthRequest="45"/>
-            <Button x:Name="Button3" Text="Horror" Grid.Row="0" Grid.Column="2" WidthRequest="45"/>
+            <Button x:Name="ViewAllBtn" Text="View All Movies" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" WidthRequest="45" Clicked="ViewAllBtn_Clicked"/>
+            <Button x:Name="ComedyBtn" Text="Comedy" Grid.Row="0" Grid.Column="1" WidthRequest="45"/>
+            <Button x:Name="HorrorBtn" Text="Horror" Grid.Row="0" Grid.Column="2" WidthRequest="45"/>
 
             <!-- Second Row -->
-            <Button x:Name="Button4" Text="Action" Grid.Row="1" Grid.Column="0" WidthRequest="45"/>
-            <Button x:Name="Button5" Text="Romance" Grid.Row="1" Grid.Column="1" WidthRequest="45"/>
-            <Button x:Name="Button6" Text="Thriller" Grid.Row="1" Grid.Column="2" WidthRequest="45"/>
+            <Button x:Name="ActionBtn" Text="Action" Grid.Row="1" Grid.Column="0" WidthRequest="45"/>
+            <Button x:Name="RomanceBtn" Text="Romance" Grid.Row="1" Grid.Column="1" WidthRequest="45"/>
+            <Button x:Name="ThrillerBtn" Text="Thriller" Grid.Row="1" Grid.Column="2" WidthRequest="45"/>
 
             <!-- Third Row -->
-            <Button x:Name="Button7" Text="Adventure" Grid.Row="2" Grid.Column="0" WidthRequest="45"/>
-            <Button x:Name="Button8" Text="Sci-fi" Grid.Row="2" Grid.Column="1" WidthRequest="45"/>
-            <Button x:Name="Button9" Text="Animation" Grid.Row="2" Grid.Column="2" WidthRequest="45"/>
+            <Button x:Name="AdventureBtn" Text="Adventure" Grid.Row="2" Grid.Column="0" WidthRequest="45"/>
+            <Button x:Name="ScifiBtn" Text="Sci-fi" Grid.Row="2" Grid.Column="1" WidthRequest="45"/>
+            <Button x:Name="AnimationBtn" Text="Animation" Grid.Row="2" Grid.Column="2" WidthRequest="45"/>
 
             <!-- Fourth Row -->
-            <Button x:Name="Button10" Text="Drama" Grid.Row="3" Grid.Column="0" WidthRequest="45"/>
-            <Button x:Name="Button11" Text="Family" Grid.Row="3" Grid.Column="1" WidthRequest="45"/>
-            <Button x:Name="Button12" Text="Documentary" Grid.Row="3" Grid.Column="2" WidthRequest="45"/>
+            <Button x:Name="DramaBtn" Text="Drama" Grid.Row="3" Grid.Column="0" WidthRequest="45"/>
+            <Button x:Name="FamilyBtn" Text="Family" Grid.Row="3" Grid.Column="1" WidthRequest="45"/>
+            <Button x:Name="DocumentaryBtn" Text="Documentary" Grid.Row="3" Grid.Column="2" WidthRequest="45"/>
         </Grid>
 
         <Label x:Name="aboutText" Text="About" FontSize="Micro" TextColor="DeepSkyBlue" Margin="10" HorizontalTextAlignment="Center">

@@ -13,7 +13,7 @@ namespace BookingSystem
 		{
 			InitializeComponent();
 
-			MainPage = new BookingSystem.MainPage();
+            MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()
