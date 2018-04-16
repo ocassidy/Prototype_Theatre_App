@@ -15,11 +15,17 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\MovieListCustomControl.xaml.cs">
+      <DependentUpon>MovieListCustomControl.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
       <Generator>
       </Generator>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Movie.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\MovieListViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MovieListView.xaml.cs">
       <DependentUpon>MovieListView.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -37,5 +43,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Controls\MovieListCustomControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
   </ItemGroup>
 </Project>

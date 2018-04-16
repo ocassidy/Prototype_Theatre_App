@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookingSystem.Controls.MovieListCustomControl">
+
+    <ScrollView>
+        <StackLayout Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <!-- First Movie Grid -->
+            <Grid x:Name="innerGrid1" RowSpacing="5" ColumnSpacing="5" Grid.Row="0" Margin="5" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="MovieTitle1" Text="{Binding Movie.Title}" Grid.Column="0" Grid.Row="0"/>
+                <Image Source="{Binding Movie.Poster}" Grid.Column="0" Grid.Row="1" Aspect="AspectFill" Grid.RowSpan="3"/>
+                <!--<Image Source="https://image.tmdb.org/t/p/w600_and_h900_bestv2/uxzzxijgPIY7slzFvMotPv8wjKA.jpg" Grid.Column="0" Grid.Row="1" Aspect="AspectFill" Grid.RowSpan="3"/>-->
+
+                <Label Text="{Binding Movie.Genres}" Grid.Column="1" Grid.Row="1"/>
+                <Label Text="{Binding Movie.Description}" Grid.Column="1" Grid.Row="2"/>
+                <Label Text="{Binding Movie.Rating}" Grid.Column="1" Grid.Row="3"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

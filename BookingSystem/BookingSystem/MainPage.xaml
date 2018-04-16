@@ -2,11 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BookingSystem"
-             x:Class="BookingSystem.MainPage">
+             x:Class="BookingSystem.MainPage"
+             Title="Foyle Cinemas">
 
     <StackLayout Margin="10">
-        <Label x:Name="mainTitle" Text="Foyle Cinemas" FontSize="Medium" Margin="10" HorizontalTextAlignment="Center"/>
-        
         <SearchBar x:Name="mainSearchbar" Placeholder="Type here to search..." FontAttributes="Italic"/>
 
         <Grid x:Name="mainGrid" RowSpacing="5" ColumnSpacing="5">
