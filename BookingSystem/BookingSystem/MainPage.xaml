@@ -6,7 +6,7 @@
              Title="Foyle Cinemas">
 
     <StackLayout Margin="10">
-        <SearchBar x:Name="mainSearchbar" Placeholder="Type here to search..." FontAttributes="Italic"/>
+        <SearchBar x:Name="mainSearchbar" Placeholder="Type here to search..." FontAttributes="Italic" SearchCommand="{Binding SearchCommand}"/>
 
         <Grid x:Name="mainGrid" RowSpacing="5" ColumnSpacing="5">
             <Grid.RowDefinitions>

@@ -15,8 +15,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Controls\MovieListCustomControl.xaml.cs">
-      <DependentUpon>MovieListCustomControl.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)BlackPanther.xaml.cs">
+      <DependentUpon>BlackPanther.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
@@ -24,12 +24,11 @@
       <Generator>
       </Generator>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Controls\Movie.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Controls\MovieListViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MovieListView.xaml.cs">
       <DependentUpon>MovieListView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)PinchToZoomContainer.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
@@ -45,12 +44,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Controls\MovieListCustomControl.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)BlackPanther.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
+      <Generator>
+      </Generator>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
   </ItemGroup>
 </Project>
