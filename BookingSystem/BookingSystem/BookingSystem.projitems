@@ -15,9 +15,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)AQuietPlace.xaml.cs">
-      <DependentUpon>AQuietPlace.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)BlackPanther.xaml.cs">
       <DependentUpon>BlackPanther.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -32,12 +29,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)PinchToZoomContainer.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ReadyPlayerOne.xaml.cs">
-      <DependentUpon>ReadyPlayerOne.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)StarWars.xaml.cs">
-      <DependentUpon>StarWars.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
@@ -54,23 +45,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)BlackPanther.xaml">
-      <SubType>Designer</SubType>
-      <Generator>
-      </Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AQuietPlace.xaml">
-      <SubType>Designer</SubType>
-      <Generator>
-      </Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ReadyPlayerOne.xaml">
-      <SubType>Designer</SubType>
-      <Generator>
-      </Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)StarWars.xaml">
       <SubType>Designer</SubType>
       <Generator>
       </Generator>

@@ -29,7 +29,7 @@
                 </Grid>
 
                 <ContentView.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_BlackPantherTapped"/>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                 </ContentView.GestureRecognizers>
             </ContentView>
 
@@ -55,7 +55,7 @@
                     <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3"/>
                 </Grid>
                 <ContentView.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_ReadyPlayerOneTapped"/>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                 </ContentView.GestureRecognizers>
             </ContentView>
 
@@ -80,7 +80,7 @@
                     <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3" Margin="5"/>
                 </Grid>
                 <ContentView.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_AQuietPlaceTapped"/>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                 </ContentView.GestureRecognizers>
             </ContentView>
 
@@ -105,7 +105,7 @@
                     <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3" Margin="5"/>
                 </Grid>
                 <ContentView.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_StarWarsTapped"/>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                 </ContentView.GestureRecognizers>
             </ContentView>
         </StackLayout>
