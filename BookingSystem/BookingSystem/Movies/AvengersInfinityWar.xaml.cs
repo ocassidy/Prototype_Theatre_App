@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace BookingSystem
+namespace BookingSystem.Movies
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class StarWars : ContentPage
+	public partial class AvengersInfinityWar : ContentPage
 	{
-		public StarWars ()
+		public AvengersInfinityWar ()
 		{
 			InitializeComponent ();
 		}

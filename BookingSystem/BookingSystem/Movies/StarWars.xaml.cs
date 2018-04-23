@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace BookingSystem
+namespace BookingSystem.Movies
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AQuietPlace : ContentPage
+	public partial class StarWars : ContentPage
 	{
-		public AQuietPlace ()
+		public StarWars ()
 		{
 			InitializeComponent ();
 		}

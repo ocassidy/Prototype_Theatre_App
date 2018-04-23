@@ -12,19 +12,27 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ActionListView.xaml.cs">
+      <DependentUpon>ActionListView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)AQuietPlace.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Movies\AQuietPlace.xaml.cs">
       <DependentUpon>AQuietPlace.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)BlackPanther - Copy.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Movies\AvengersInfinityWar.xaml.cs">
+      <DependentUpon>AvengersInfinityWar.xaml</DependentUpon>
       <SubType>Code</SubType>
-      <DependentUpon>BlackPanther.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)BlackPanther.xaml.cs">
-      <DependentUpon>BlackPanther.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)ComedyListView.xaml.cs">
+      <DependentUpon>ComedyListView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)HorrorListView.xaml.cs">
+      <DependentUpon>HorrorListView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
@@ -36,13 +44,25 @@
       <DependentUpon>MovieListView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)PinchToZoomContainer.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ReadyPlayerOne.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Movies\BlackPanther.xaml.cs">
+      <DependentUpon>BlackPanther.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Movies\ReadyPlayerOne.xaml.cs">
       <DependentUpon>ReadyPlayerOne.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)StarWars.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Movies\StarWars.xaml.cs">
       <DependentUpon>StarWars.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)PinchToZoomContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RomanceListView.xaml.cs">
+      <DependentUpon>RomanceListView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ThrillerListView.xaml.cs">
+      <DependentUpon>ThrillerListView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -56,30 +76,70 @@
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MovieListView.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
+      <Generator>
+      </Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)BlackPanther.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ComedyListView.xaml">
       <SubType>Designer</SubType>
       <Generator>
       </Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ReadyPlayerOne.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)HorrorListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>
+      </Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ActionListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AQuietPlace.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)RomanceListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>
+      </Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ThrillerListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)StarWars.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Movies\AvengersInfinityWar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>
+      </Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Movies\BlackPanther.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Movies\AQuietPlace.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Movies\ReadyPlayerOne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Movies\StarWars.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

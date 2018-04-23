@@ -10,13 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace BookingSystem
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MovieListView : ContentPage
+	public partial class ActionListView : ContentPage
 	{
-		public MovieListView ()
+		public ActionListView ()
 		{
 			InitializeComponent ();
 		}
-
         private void TapGestureRecognizer_BlackPantherTapped(object sender, EventArgs e)
         {
             Navigation.PushAsync(new BlackPanther());
