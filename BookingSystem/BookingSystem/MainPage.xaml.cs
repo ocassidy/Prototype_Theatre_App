@@ -21,27 +21,27 @@ namespace BookingSystem
 
         private void ComedyBtn_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new ComedyListView());
         }
 
         private void HorrorBtn_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new HorrorListView());
         }
 
         private void ActionBtn_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new ActionListView());
         }
 
         private void RomanceBtn_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new RomanceListView());
         }
 
         private void ThrillerBtn_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new ThrillerListView());
         }
 
         private void AdventureBtn_Clicked(object sender, EventArgs e)
