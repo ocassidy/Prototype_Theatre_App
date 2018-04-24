@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="BookingSystem.PaymentPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BookingSystem"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+      <StackPanel Orientation="Vertical" RenderTransformOrigin="0.497,0.582">
+
+        <TextBlock HorizontalAlignment="Center" TextWrapping="NoWrap"
+            Text="Ticket Payment" VerticalAlignment="Top" FontSize="20">
+        </TextBlock>
+
+        <Label Content="Payment method:"/>
+
+        <ComboBox>
+          <ComboBoxItem>
+            Visa
+          </ComboBoxItem>
+
+          <ComboBoxItem>
+            Maestro
+          </ComboBoxItem>
+
+          <ComboBoxItem>
+            Master Card
+          </ComboBoxItem>
+
+          <ComboBoxItem>
+            Visa debit
+          </ComboBoxItem>
+
+          <ComboBoxItem>
+            American Express
+          </ComboBoxItem>
+        </ComboBox>
+
+        <Label Content="Card number:"/>
+        <TextBox x:Name="TBcardnumber" Margin="5 0 5 0" IsEnabled="False"/>
+
+        <Label Content="Name on card:"/>
+        <TextBox x:Name="TBnameoncard" Margin="5 0 5 0" IsEnabled="False"/>
+
+        <Label Content="Expiry date:"/>
+        <TextBox x:Name="TBexpdate" Margin="5 0 5 0" IsEnabled="False"/>
+
+        <Label Content="CVC:"/>
+        <TextBox x:Name="TBcvc" Margin="5 0 5 0" IsEnabled="False"/>
+
+        <Button x:Name="submit" Height="35" Width="70" HorizontalAlignment="Right" Margin="0 5 5 0" Content="Submit">
+
+        </Button>
+      </StackPanel>
+
+
+    </Grid>
+
+    </Grid>
+</Page>
