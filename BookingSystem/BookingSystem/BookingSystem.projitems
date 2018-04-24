@@ -56,7 +56,6 @@
       <DependentUpon>StarWars.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)PinchToZoomContainer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RomanceListView.xaml.cs">
       <DependentUpon>RomanceListView.xaml</DependentUpon>
       <SubType>Code</SubType>
