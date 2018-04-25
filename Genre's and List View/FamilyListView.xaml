@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookingSystem.FamilyListView"
+             Title="Family Films">
+    <ScrollView>
+        <StackLayout Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <SearchBar x:Name="mainSearchbar" Placeholder="Type here to search..." FontAttributes="Italic" SearchCommand="{Binding SearchCommand}"/>
+            <!-- First Movie Grid -->
+            <ContentView>
+                <Grid x:Name="Grid1" RowSpacing="5" ColumnSpacing="5" Grid.Row="0" Margin="5" BackgroundColor="LightGray" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="MovieTitle1" Text="Peter Rabbit" Grid.Column="0" Grid.Row="0" Margin="5"/>
+                    <Image Source="https://ia.media-imdb.com/images/M/MV5BOWE4YzE3Y2MtYzIyZS00NjA4LTliMDgtY2U0NGM2NzI4MjZlXkEyXkFqcGdeQXVyNTU5Mzk0NjE@._V1_.jpg" Grid.Column="0" Grid.Row="1" Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
+
+                    <Label Text="Genres: Animation, Adventure, Comedy" Grid.Column="1" Grid.Row="1" Margin="5"/>
+
+                    <Label Text="Description: Feature adaptation of Beatrix Potter's classic tale of a rebellious rabbit trying to sneak into a farmer's vegetable garden." Grid.Column="1" Grid.Row="2" Margin="5"/>
+                    <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3" Margin="5"/>
+                </Grid>
+
+                <ContentView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_PeterRabbitTapped"/>
+                </ContentView.GestureRecognizers>
+            </ContentView>
+
+
+            <!-- Second Movie Grid -->
+            <ContentView>
+                <Grid x:Name="Grid2" RowSpacing="5" ColumnSpacing="5" Grid.Row="1" Margin="5" BackgroundColor="LightGray">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="MovieTitle2" Text="Early Man" Margin="5"/>
+                    <Image Source="https://ia.media-imdb.com/images/M/MV5BYWMxYWVjNzAtMTY0YS00YWQyLWExMGItMjUxODkwYzQyNzMwXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_SY1000_CR0,0,657,1000_AL_.jpg" Grid.Column="0" Grid.Row="1" Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
+
+                    <Label Text="Genres: Animation, Adventure, Comedy, Family" Grid.Column="1" Grid.Row="1"/>
+                    <Label Text="Description: Set at the dawn of time, when prehistoric creatures and woolly mammoths roamed the earth, Early Man tells the story of Dug, along with sidekick Hognob as they unite his tribe against a mighty enemy Lord Nooth and his Bronze Age City to save their home." Grid.Column="1" Grid.Row="2"/>
+                    <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3"/>
+                </Grid>
+                <ContentView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_EarlyManTapped"/>
+                </ContentView.GestureRecognizers>
+            </ContentView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
