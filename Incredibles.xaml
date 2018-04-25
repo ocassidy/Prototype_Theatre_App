@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookingSystem.Movies.Incredibles"
+             Title="Incredibles">
+
+    <ScrollView>
+        <StackLayout>
+            <Grid x:Name="Grid" RowSpacing="5" ColumnSpacing="5" Grid.Row="2" Margin="5" BackgroundColor="LightGray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="MovieTitle" Text=" Incredibles " FontSize="Medium" FontAttributes="Bold"  Margin="5"/>
+
+                <Image x:Name="IncrediblesPoster" Source="https://ia.media-imdb.com/images/M/MV5BMTEzNzY0OTg0NTdeQTJeQWpwZ15BbWU4MDU3OTg3MjUz._V1_SY1000_CR0,0,674,1000_AL_.jpg"  Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
+
+                <Label Text="Genres: Animation" Grid.Column="1" Grid.Row="1" Margin="5"/>
+                <Label Text="Description: Bob Parr (Mr Incredible is left to care for Jack-Jack while helen is out saving the world. " Grid.Column="1" Grid.Row="2" Margin="5"/>
+                <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3" Margin="5"/>
+
+
+                <Picker x:Name="LocationPick"  Grid.Column="1" Grid.Row="4"/>
+                <DatePicker x:Name="DatePick" Grid.Column="1" Grid.Row="5"/>
+                <TimePicker x:Name="TimePick" Grid.Column="1" Grid.Row="6"/>
+
+                <Button x:Name="TicketBtn" Text="Choose Tickets" Grid.Column="1" Grid.Row="7" />
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
