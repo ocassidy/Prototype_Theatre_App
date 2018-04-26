@@ -1,0 +1,24 @@
+﻿<Window x:Class="Booking_Confirmation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Booking_Confirmation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <StackPanel>
+        <!-- Display the label/input -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Label FontWeight="Bold" Content="Your Booking Is Confirmed!"  Grid.Column="1" Margin="148,92,60,-108" FontSize="16"/>
+            <Label FontWeight="Bold" Content="Your Booking Reference Is: 56823456"  Grid.Column="1" Margin="122,187,60,-187" FontSize="16"/>
+            
+            <Button  Grid.Column="1" Content="Continue" Margin="136,286,72,-290" FontSize="16"/>
+        </Grid>
+    </StackPanel>
+</Window>
