@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookingSystem.DocumentaryListView"
+             Title="Documentry Films">
+    <ScrollView>
+        <StackLayout Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <SearchBar x:Name="mainSearchbar" Placeholder="Type here to search..." FontAttributes="Italic" SearchCommand="{Binding SearchCommand}"/>
+            <!-- First Movie Grid -->
+            <ContentView>
+                <Grid x:Name="Grid1" RowSpacing="5" ColumnSpacing="5" Grid.Row="0" Margin="5" BackgroundColor="LightGray" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="MovieTitle1" Text="Three Identical Strangers" Grid.Column="0" Grid.Row="0" Margin="5"/>
+                    <Image Source="https://ia.media-imdb.com/images/M/MV5BMTU0NTA2MzA4NF5BMl5BanBnXkFtZTgwMjQ1MDgyNTM@._V1_.jpg" Grid.Column="0" Grid.Row="1" Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
+
+                    <Label Text="Genres: Documentry" Grid.Column="1" Grid.Row="1" Margin="5"/>
+
+                    <Label Text="Description: New York, 1980: three complete strangers accidentally discover that they are identical triplets, separated at birth. The 19-year-olds' joyous reunion catapults them to international fame." Grid.Column="1" Grid.Row="2" Margin="5"/>
+                    <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3" Margin="5"/>
+                </Grid>
+
+                <ContentView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_ThreeIdenticalStrangersTapped"/>
+                </ContentView.GestureRecognizers>
+            </ContentView>
+
+
+            <!-- Second Movie Grid -->
+            <ContentView>
+                <Grid x:Name="Grid2" RowSpacing="5" ColumnSpacing="5" Grid.Row="1" Margin="5" BackgroundColor="LightGray">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="MovieTitle2" Text="Seeing All Red" Margin="5"/>
+                    <Image Source="https://ia.media-imdb.com/images/M/MV5BMjI4NTA3NDgyNV5BMl5BanBnXkFtZTgwNDA3NDg1NDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg" Grid.Column="0" Grid.Row="1" Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
+
+                    <Label Text="Genres: Documentry" Grid.Column="1" Grid.Row="1"/>
+                    <Label Text="Description: Women's rights attorney Gloria Allred takes on the biggest names in American culture as coverage of sexual assault allegations in the media become more prevalent." Grid.Column="1" Grid.Row="2"/>
+                    <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3"/>
+                </Grid>
+                <ContentView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_SeeingAllRedTapped"/>
+                </ContentView.GestureRecognizers>
+            </ContentView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

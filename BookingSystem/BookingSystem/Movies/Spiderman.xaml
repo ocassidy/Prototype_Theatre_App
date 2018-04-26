@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BookingSystem.Movies.AvengersInfinityWar"
-             Title="Avengers: Infinity War">
+             x:Class="BookingSystem.Movies.Spiderman"
+              Title="Spiderman">
 
     <ScrollView>
         <StackLayout>
@@ -22,12 +22,12 @@
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
-                <Label x:Name="MovieTitle" Text="A Quiet Place" FontSize="Medium" FontAttributes="Bold"  Margin="5"/>
+                <Label x:Name="MovieTitle" Text=" Spider Man " FontSize="Medium" FontAttributes="Bold"  Margin="5"/>
 
-                <Image x:Name="AQuietPlacePoster" Source="https://image.tmdb.org/t/p/w600_and_h900_bestv2/nAU74GmpUk7t5iklEp3bufwDq4n.jpg"  Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
+                <Image x:Name="SpiderManPoster" Source="https://ia.media-imdb.com/images/M/MV5BNTk4ODQ1MzgzNl5BMl5BanBnXkFtZTgwMTMyMzM4MTI@._V1_SY1000_CR0,0,658,1000_AL_.jpg"  Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
 
                 <Label Text="Genres: Action, Sci-fi, Adventure" Grid.Column="1" Grid.Row="1" Margin="5"/>
-                <Label Text="Description: A family is forced to live in silence while hiding from creatures that hunt by sound." Grid.Column="1" Grid.Row="2" Margin="5"/>
+                <Label Text="Description: Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New York City.." Grid.Column="1" Grid.Row="2" Margin="5"/>
                 <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3" Margin="5"/>
 
 

@@ -7,19 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace BookingSystem.Movies
+namespace BookingSystem
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class BlackPanther : ContentPage
+	public partial class VerificationPage : ContentPage
 	{
-		public BlackPanther ()
+		public VerificationPage ()
 		{
 			InitializeComponent ();
 		}
-
-        private void TicketBtn_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new TicketPage());
-        }
-    }
+	}
 }

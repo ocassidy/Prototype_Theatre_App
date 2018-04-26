@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookingSystem.ScFiListView"
+             Title="SciFi Films">
+    <ScrollView>
+        <StackLayout Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <SearchBar x:Name="mainSearchbar" Placeholder="Type here to search..." FontAttributes="Italic" SearchCommand="{Binding SearchCommand}"/>
+            <!-- First Movie Grid -->
+            <ContentView>
+                <Grid x:Name="Grid1" RowSpacing="5" ColumnSpacing="5" Grid.Row="0" Margin="5" BackgroundColor="LightGray" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="MovieTitle1" Text="Spiderman" Grid.Column="0" Grid.Row="0" Margin="5"/>
+                    <Image Source="https://ia.media-imdb.com/images/M/MV5BNTk4ODQ1MzgzNl5BMl5BanBnXkFtZTgwMTMyMzM4MTI@._V1_SY1000_CR0,0,658,1000_AL_.jpg" Grid.Column="0" Grid.Row="1" Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
+
+                    <Label Text="Genres: SciFi" Grid.Column="1" Grid.Row="1" Margin="5"/>
+
+                    <Label Text="Description: Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, 
+                           and finds himself on the trail of a new menace prowling the skies of New York City.." Grid.Column="1" Grid.Row="2" Margin="5"/>
+                    <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3" Margin="5"/>
+                </Grid>
+
+                <ContentView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_SpidermanTapped"/>
+                </ContentView.GestureRecognizers>
+            </ContentView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

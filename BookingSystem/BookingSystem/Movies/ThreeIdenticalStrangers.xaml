@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BookingSystem.Movies.AvengersInfinityWar"
-             Title="Avengers: Infinity War">
+             x:Class="BookingSystem.Movies.ThreeIdenticalStrangers"
+             Title="Three Identical Strangers">
 
     <ScrollView>
         <StackLayout>
@@ -22,18 +22,18 @@
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
-                <Label x:Name="MovieTitle" Text="A Quiet Place" FontSize="Medium" FontAttributes="Bold"  Margin="5"/>
+                <Label x:Name="MovieTitle" Text="Three Identical strangers" FontSize="Medium" FontAttributes="Bold"  Margin="5"/>
+                <Image x:Name="ThreeIdenticalStrangersPoster" Source="https://ia.media-imdb.com/images/M/MV5BMTU0NTA2MzA4NF5BMl5BanBnXkFtZTgwMjQ1MDgyNTM@._V1_.jpg"  Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
 
-                <Image x:Name="AQuietPlacePoster" Source="https://image.tmdb.org/t/p/w600_and_h900_bestv2/nAU74GmpUk7t5iklEp3bufwDq4n.jpg"  Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
-
-                <Label Text="Genres: Action, Sci-fi, Adventure" Grid.Column="1" Grid.Row="1" Margin="5"/>
-                <Label Text="Description: A family is forced to live in silence while hiding from creatures that hunt by sound." Grid.Column="1" Grid.Row="2" Margin="5"/>
+                <Label Text="Genres: Documentry" Grid.Column="1" Grid.Row="1" Margin="5"/>
+                <Label Text="Description: New York, 1980: three complete strangers accidentally discover that they are identical triplets, separated at birth. The 19-year-olds' joyous reunion catapults them to international fame." Grid.Column="1" Grid.Row="2" Margin="5"/>
                 <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3" Margin="5"/>
 
 
                 <Picker x:Name="LocationPick"  Grid.Column="1" Grid.Row="4"/>
                 <DatePicker x:Name="DatePick" Grid.Column="1" Grid.Row="5"/>
                 <TimePicker x:Name="TimePick" Grid.Column="1" Grid.Row="6"/>
+
 
                 <Button x:Name="TicketBtn" Text="Choose Tickets" Grid.Column="1" Grid.Row="7" />
             </Grid>

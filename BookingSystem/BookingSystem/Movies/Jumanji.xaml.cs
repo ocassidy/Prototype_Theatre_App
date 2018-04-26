@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace BookingSystem.Movies
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class BlackPanther : ContentPage
+	public partial class Jumanji : ContentPage
 	{
-		public BlackPanther ()
+		public Jumanji ()
 		{
 			InitializeComponent ();
 		}
-
-        private void TicketBtn_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new TicketPage());
-        }
-    }
+	}
 }
