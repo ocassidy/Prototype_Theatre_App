@@ -5,19 +5,21 @@
              Title="Ticket Page">
     <ScrollView>
         <StackLayout>
-            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" RowSpacing="5" ColumnSpacing="5">
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" RowSpacing="10" ColumnSpacing="10">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Type" Grid.Column="0" Grid.Row="0"/>
@@ -40,12 +42,14 @@
                 <Picker x:Name="PaymentPickerTeen" Grid.Column="2" Grid.Row="3"/>
                 <Picker x:Name="PaymentPickerStudent" Grid.Column="2" Grid.Row="4"/>
 
-                <Entry x:Name="AdultCalc" Text="{Binding AdultCalc}" Grid.Column="3" Grid.Row="1" IsEnabled="False" />
-                <Entry x:Name="ChildtCalc" Text="{Binding ChildCalc}" Grid.Column="3" Grid.Row="2" IsEnabled="False"/>
-                <Entry x:Name="TeenCalc" Text="{Binding TeenCalc}" Grid.Column="3" Grid.Row="3" IsEnabled="False"/>
-                <Entry x:Name="StudentCalc" Text="{Binding StudentCalc}" Grid.Column="3" Grid.Row="4" IsEnabled="False"/>
+                <Entry x:Name="AdultCalc" Grid.Column="3" Grid.Row="1" IsEnabled="False" BackgroundColor="LightSlateGray"/>
+                <Entry x:Name="ChildtCalc" Grid.Column="3" Grid.Row="2" IsEnabled="False" BackgroundColor="LightSlateGray"/>
+                <Entry x:Name="TeenCalc" Grid.Column="3" Grid.Row="3" IsEnabled="False" BackgroundColor="LightSlateGray"/>
+                <Entry x:Name="StudentCalc" Grid.Column="3" Grid.Row="4" IsEnabled="False" BackgroundColor="LightSlateGray"/>
+                <Entry x:Name="TotalCalc" Grid.Column="3" Grid.Row="5" IsEnabled="False" BackgroundColor="LightSlateGray"/>
 
-                <Button x:Name="ContineBtn" Text="Continue" Clicked="ContineBtn_Clicked"/>
+                <Button x:Name="CheckBtn" Text="Check Price" Clicked="CheckBtn_Clicked" Grid.Column="2" Grid.Row="6" WidthRequest="15" HeightRequest="10"/>
+                <Button x:Name="ContineBtn" Text="Continue" Clicked="ContineBtn_Clicked" Grid.Column="3" Grid.Row="6" WidthRequest="10" HeightRequest="10"/>
             </Grid>
         </StackLayout>
     </ScrollView>

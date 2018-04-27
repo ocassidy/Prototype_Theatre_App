@@ -18,7 +18,7 @@ namespace BookingSystem
 		}
         private void TapGestureRecognizer_SpidermanTapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Jumanji());
+            Navigation.PushAsync(new Spiderman());
         }
     }
 }

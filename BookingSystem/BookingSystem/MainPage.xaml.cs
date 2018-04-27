@@ -46,32 +46,32 @@ namespace BookingSystem
 
         private void AdventureBtn_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new AdventureListView());
         }
 
         private void ScifiBtn_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new ScFiListView());
         }
 
         private void AnimationBtn_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new AnimationListView());
         }
 
         private void DramaBtn_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new DramaListView());
         }
 
         private void FamilyBtn_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new FamilyListView());
         }
 
         private void DocumentaryBtn_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new DocumentaryListView());
         }
 
         private void TapGestureRecognizer_AboutTapped(object sender, EventArgs e)

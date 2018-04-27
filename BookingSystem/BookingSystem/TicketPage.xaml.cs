@@ -41,38 +41,116 @@ namespace BookingSystem
             PaymentPickerStudent.Items.Add("4");
             PaymentPickerStudent.Items.Add("5");
 
+  
+        }
+
+        private async void ContineBtn_Clicked(object sender, EventArgs e)
+        {
+            var confirm = await DisplayAlert("Continue", "Are you sure you want to continue?", "Ok", "Cancel");
+
+            if(confirm)
+            {
+                await Navigation.PushAsync(new VerificationPage());
+            }
+        }
+
+        private void CheckBtn_Clicked(object sender, EventArgs e)
+        {
+            CheckAdult();
+            CheckChild();
+            CheckTeen();
+            CheckStudent();
+        }
+        private void CheckAdult()
+        {
             if (PaymentPickerAdult.Items.Contains("1"))
             {
                 AdultCalc.Text = (5 * 1).ToString();
             }
-            if (PaymentPickerAdult.Items.Contains("2"))
+            else if (PaymentPickerAdult.Items.Contains("2"))
             {
                 AdultCalc.Text = (5 * 2).ToString();
             }
-            if (PaymentPickerAdult.Items.Contains("3"))
+            else if (PaymentPickerAdult.Items.Contains("3"))
             {
                 AdultCalc.Text = (5 * 3).ToString();
             }
-            if (PaymentPickerAdult.Items.Contains("4"))
+            else if (PaymentPickerAdult.Items.Contains("4"))
             {
                 AdultCalc.Text = (5 * 4).ToString();
             }
-            if (PaymentPickerAdult.Items.Contains("5"))
+            else if (PaymentPickerAdult.Items.Contains("5"))
             {
                 AdultCalc.Text = (5 * 5).ToString();
             }
         }
-
-        private void ContineBtn_Clicked(object sender, EventArgs e)
+        private void CheckChild()
         {
-            bool continuebtn = false;
-
-            Rg.Plugins.Popup.
-            DisplayAlert("Continue", "Are you sure you want to continue?", "Ok", "Cancel");
-
-            if(continuebtn == true)
+            if(PaymentPickerChild.Items.Contains("1"))
             {
-                Navigation.PushAsync(new VerificationPage());
+                AdultCalc.Text = (5 * 1).ToString();
+            }
+            else if(PaymentPickerChild.Items.Contains("2"))
+            {
+                AdultCalc.Text = (5 * 2).ToString();
+            }
+            else if(PaymentPickerChild.Items.Contains("3"))
+            {
+                AdultCalc.Text = (5 * 3).ToString();
+            }
+            else if(PaymentPickerAdult.Items.Contains("4"))
+            {
+                AdultCalc.Text = (5 * 4).ToString();
+            }
+            else if(PaymentPickerAdult.Items.Contains("5"))
+            {
+                AdultCalc.Text = (5 * 5).ToString();
+            }
+        }
+        private void CheckTeen()
+        {
+            if (PaymentPickerTeen.Items.Contains("1"))
+            {
+                AdultCalc.Text = (5 * 1).ToString();
+            }
+            else if(PaymentPickerTeen.Items.Contains("2"))
+            {
+                AdultCalc.Text = (5 * 2).ToString();
+            }
+            else if(PaymentPickerTeen.Items.Contains("3"))
+            {
+                AdultCalc.Text = (5 * 3).ToString();
+            }
+            else if(PaymentPickerTeen.Items.Contains("4"))
+            {
+                AdultCalc.Text = (5 * 4).ToString();
+            }
+            else if(PaymentPickerTeen.Items.Contains("5"))
+            {
+                AdultCalc.Text = (5 * 5).ToString();
+            }
+        }
+        private void CheckStudent()
+        {
+            if(PaymentPickerStudent.Items.Contains("1"))
+            {
+                AdultCalc.Text = (5 * 1).ToString();
+            }
+            else if(PaymentPickerStudent.Items.Contains("2"))
+            {
+                AdultCalc.Text = (5 * 2).ToString();
+            }
+            else if  (PaymentPickerStudent.Items.Contains("3"))
+            {
+                AdultCalc.Text = (5 * 3).ToString();
+            }
+            else if(PaymentPickerTeen.Items.Contains("4"))
+            {
+                AdultCalc.Text = (5 * 4).ToString();
+            }
+            else if(PaymentPickerStudent.Items.Contains("5"))
+            {
+                AdultCalc.Text = (5 * 5).ToString();
             }
         }
     }

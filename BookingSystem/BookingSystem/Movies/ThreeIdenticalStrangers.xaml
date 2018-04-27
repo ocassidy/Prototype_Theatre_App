@@ -35,7 +35,7 @@
                 <TimePicker x:Name="TimePick" Grid.Column="1" Grid.Row="6"/>
 
 
-                <Button x:Name="TicketBtn" Text="Choose Tickets" Grid.Column="1" Grid.Row="7" />
+                <Button x:Name="TicketBtn" Text="Choose Tickets" Grid.Column="1" Grid.Row="7" Clicked="TicketBtn_Clicked"/>
             </Grid>
         </StackLayout>
     </ScrollView>

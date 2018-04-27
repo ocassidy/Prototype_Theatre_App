@@ -15,6 +15,14 @@ namespace BookingSystem.Movies
 		public ReadyPlayerOne ()
 		{
 			InitializeComponent ();
-		}
-	}
+            LocationPick.Items.Add("Derry");
+            LocationPick.Items.Add("Coleraine");
+            LocationPick.Items.Add("Strabane");
+            LocationPick.Items.Add("Limavady");
+        }
+        private void TicketBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new TicketPage());
+        }
+    }
 }

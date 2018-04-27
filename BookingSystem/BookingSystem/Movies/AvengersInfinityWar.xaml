@@ -22,12 +22,12 @@
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
-                <Label x:Name="MovieTitle" Text="A Quiet Place" FontSize="Medium" FontAttributes="Bold"  Margin="5"/>
+                <Label x:Name="MovieTitle" Text="Avengers: Infinity War" FontSize="Medium" FontAttributes="Bold"  Margin="5"/>
 
-                <Image x:Name="AQuietPlacePoster" Source="https://image.tmdb.org/t/p/w600_and_h900_bestv2/nAU74GmpUk7t5iklEp3bufwDq4n.jpg"  Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
+                <Image x:Name="Poster" Source="https://image.tmdb.org/t/p/w600_and_h900_bestv2/544LXWd8lerbryS251XQltF1Gs9.jpg"  Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
 
                 <Label Text="Genres: Action, Sci-fi, Adventure" Grid.Column="1" Grid.Row="1" Margin="5"/>
-                <Label Text="Description: A family is forced to live in silence while hiding from creatures that hunt by sound." Grid.Column="1" Grid.Row="2" Margin="5"/>
+                <Label Text="Description: As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos." Grid.Column="1" Grid.Row="2" Margin="5"/>
                 <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3" Margin="5"/>
 
 
