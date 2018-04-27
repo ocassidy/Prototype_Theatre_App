@@ -50,7 +50,7 @@ namespace BookingSystem
 
             if(confirm)
             {
-                await Navigation.PushAsync(new VerificationPage());
+                await Navigation.PushAsync(new EnterDetailsPage());
             }
         }
 

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookingSystem.EnterDetailsPage">
+    <ScrollView>
+        <StackLayout Margin="5" Padding="1">
+            <Label Text="Please Enter Your Details."/>
+            <Label Text="Required fields are marked*"/>
+
+            <Label Text="Name *" Margin="5"/>
+            <Entry x:Name="nameField" IsEnabled="True" Placeholder="Enter name here..." Margin="5"/>
+
+            <Label Text="Email *" Margin="5"/>
+            <Entry x:Name="emailField" IsEnabled="True" Placeholder="Enter email here..." Margin="5"/>
+
+            <Label Text="Confirm Email *" Margin="5"/>
+            <Entry x:Name="emailFieldCon" IsEnabled="True" Placeholder="Enter email here..." Margin="5"/>
+
+            <Label Text="Phone *" Margin="5"/>
+            <Entry x:Name="phoneField" IsEnabled="True" Placeholder="Enter phone number here..." Margin="5"/>
+
+            <Label Text="Card Number *" Margin="5"/>
+            <Entry x:Name="cardNumField" IsEnabled="True" Placeholder="Enter card number here..." Margin="5"/>
+
+            <Label Text="Card CVC *" Margin="5"/>
+            <Entry x:Name="cvcField" IsEnabled="True" Placeholder="Enter cvc number here..." Margin="5"/>
+
+            <Button x:Name="confirmBtn" Text="Confirm" Clicked="ConfirmBtn_Clicked" Margin="5"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
