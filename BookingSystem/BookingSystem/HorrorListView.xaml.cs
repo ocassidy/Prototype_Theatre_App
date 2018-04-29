@@ -17,21 +17,10 @@ namespace BookingSystem
 		{
 			InitializeComponent ();
 		}
-        private void TapGestureRecognizer_BlackPantherTapped(object sender, EventArgs e)
+        private void TapGestureRecognizer_HalloweenTapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new BlackPanther());
+            Navigation.PushAsync(new Halloween());
         }
-        private void TapGestureRecognizer_ReadyPlayerOneTapped(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new ReadyPlayerOne());
-        }
-        private void TapGestureRecognizer_AQuietPlaceTapped(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new AQuietPlace());
-        }
-        private void TapGestureRecognizer_StarWarsTapped(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new StarWars());
-        }
+       
     }
 }

@@ -10,7 +10,6 @@ using Rg.Plugins.Popup;
 
 namespace BookingSystem
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TicketPage : ContentPage
     {
         public TicketPage()
@@ -21,7 +20,6 @@ namespace BookingSystem
             PaymentPickerAdult.Items.Add("3");
             PaymentPickerAdult.Items.Add("4");
             PaymentPickerAdult.Items.Add("5");
-
 
             PaymentPickerChild.Items.Add("1");
             PaymentPickerChild.Items.Add("2");
@@ -40,8 +38,6 @@ namespace BookingSystem
             PaymentPickerStudent.Items.Add("3");
             PaymentPickerStudent.Items.Add("4");
             PaymentPickerStudent.Items.Add("5");
-
-  
         }
 
         private async void ContineBtn_Clicked(object sender, EventArgs e)
@@ -60,6 +56,7 @@ namespace BookingSystem
             CheckChild();
             CheckTeen();
             CheckStudent();
+            CheckTotal();
         }
         private void CheckAdult()
         {
@@ -88,34 +85,34 @@ namespace BookingSystem
         {
             if(PaymentPickerChild.Items.Contains("1"))
             {
-                AdultCalc.Text = (5 * 1).ToString();
+                ChildCalc.Text = (5 * 1).ToString();
             }
             else if(PaymentPickerChild.Items.Contains("2"))
             {
-                AdultCalc.Text = (5 * 2).ToString();
+                ChildCalc.Text = (5 * 2).ToString();
             }
             else if(PaymentPickerChild.Items.Contains("3"))
             {
-                AdultCalc.Text = (5 * 3).ToString();
+                ChildCalc.Text = (5 * 3).ToString();
             }
             else if(PaymentPickerAdult.Items.Contains("4"))
             {
-                AdultCalc.Text = (5 * 4).ToString();
+                ChildCalc.Text = (5 * 4).ToString();
             }
             else if(PaymentPickerAdult.Items.Contains("5"))
             {
-                AdultCalc.Text = (5 * 5).ToString();
+                ChildCalc.Text = (5 * 5).ToString();
             }
         }
         private void CheckTeen()
         {
             if (PaymentPickerTeen.Items.Contains("1"))
             {
-                AdultCalc.Text = (5 * 1).ToString();
+                TeenCalc.Text = (5 * 1).ToString();
             }
             else if(PaymentPickerTeen.Items.Contains("2"))
             {
-                AdultCalc.Text = (5 * 2).ToString();
+                TeenCalc.Text = (5 * 2).ToString();
             }
             else if(PaymentPickerTeen.Items.Contains("3"))
             {
@@ -123,35 +120,39 @@ namespace BookingSystem
             }
             else if(PaymentPickerTeen.Items.Contains("4"))
             {
-                AdultCalc.Text = (5 * 4).ToString();
+                TeenCalc.Text = (5 * 4).ToString();
             }
             else if(PaymentPickerTeen.Items.Contains("5"))
             {
-                AdultCalc.Text = (5 * 5).ToString();
+                TeenCalc.Text = (5 * 5).ToString();
             }
         }
         private void CheckStudent()
         {
             if(PaymentPickerStudent.Items.Contains("1"))
             {
-                AdultCalc.Text = (5 * 1).ToString();
+                StudentCalc.Text = (5 * 1).ToString();
             }
             else if(PaymentPickerStudent.Items.Contains("2"))
             {
                 AdultCalc.Text = (5 * 2).ToString();
             }
-            else if  (PaymentPickerStudent.Items.Contains("3"))
+            else if(PaymentPickerStudent.Items.Contains("3"))
             {
-                AdultCalc.Text = (5 * 3).ToString();
+                StudentCalc.Text = (5 * 3).ToString();
             }
             else if(PaymentPickerTeen.Items.Contains("4"))
             {
-                AdultCalc.Text = (5 * 4).ToString();
+                StudentCalc.Text = (5 * 4).ToString();
             }
             else if(PaymentPickerStudent.Items.Contains("5"))
             {
-                AdultCalc.Text = (5 * 5).ToString();
+                StudentCalc.Text = (5 * 5).ToString();
             }
+        }
+        private void CheckTotal()
+        {
+            TotalCalc.Text = (AdultCalc.Text + ChildCalc.Text + TeenCalc.Text + StudentCalc.Text).ToString();
         }
     }
 }

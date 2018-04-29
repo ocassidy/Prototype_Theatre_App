@@ -24,9 +24,9 @@ namespace BookingSystem
         {
             Navigation.PushAsync(new ReadyPlayerOne());
         }
-        private void TapGestureRecognizer_AQuietPlaceTapped(object sender, EventArgs e)
+        private void TapGestureRecognizer_AvengersTapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new AQuietPlace());
+            Navigation.PushAsync(new AvengersInfinityWar());
         }
         private void TapGestureRecognizer_StarWarsTapped(object sender, EventArgs e)
         {

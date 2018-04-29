@@ -34,7 +34,6 @@
                 </ContentView.GestureRecognizers>
             </ContentView>
 
-
             <!-- Second Movie Grid -->
             <ContentView>
                 <Grid x:Name="Grid2" RowSpacing="5" ColumnSpacing="5" Grid.Row="1" Margin="5" BackgroundColor="LightGray">
@@ -73,15 +72,15 @@
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
-                    <Label x:Name="MovieTitle3" Text="A Quiet Place" Margin="5"/>
-                    <Image Source="https://image.tmdb.org/t/p/w600_and_h900_bestv2/nAU74GmpUk7t5iklEp3bufwDq4n.jpg" Grid.Column="0" Grid.Row="1" Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
+                    <Label x:Name="MovieTitle3" Text="Avengers: Infinity War" Margin="5"/>
+                    <Image Source="https://image.tmdb.org/t/p/w600_and_h900_bestv2/544LXWd8lerbryS251XQltF1Gs9.jpg" Grid.Column="0" Grid.Row="1" Aspect="AspectFill" Grid.RowSpan="3" Margin="5"/>
 
-                    <Label Text="Genres: Action, Sci-fi, Adventure" Grid.Column="1" Grid.Row="1" Margin="5"/>
-                    <Label Text="Description: A family is forced to live in silence while hiding from creatures that hunt by sound." Grid.Column="1" Grid.Row="2" Margin="5"/>
+                    <Label Text="Genres: Action, Sci-fi" Grid.Column="1" Grid.Row="1" Margin="5"/>
+                    <Label Text="Description: As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle..." Grid.Column="1" Grid.Row="2" Margin="5"/>
                     <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3" Margin="5"/>
                 </Grid>
                 <ContentView.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_AQuietPlaceTapped"/>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_AvengersTapped"/>
                 </ContentView.GestureRecognizers>
             </ContentView>
 

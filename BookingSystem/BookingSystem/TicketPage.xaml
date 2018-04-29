@@ -22,34 +22,35 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Label Text="Type" Grid.Column="0" Grid.Row="0"/>
-                <Label Text="Price" Grid.Column="1" Grid.Row="0"/>
-                <Label Text="Quantity" Grid.Column="2" Grid.Row="0"/>
-                <Label Text="Total" Grid.Column="3" Grid.Row="0"/>
+                <Label Text="Type" Grid.Column="0" Grid.Row="0" FontAttributes="Bold"  HorizontalOptions="Center"/>
+                <Label Text="Price" Grid.Column="1" Grid.Row="0" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="Quantity" Grid.Column="2" Grid.Row="0" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="Total" Grid.Column="3" Grid.Row="0" FontAttributes="Bold" HorizontalOptions="Center"/>
 
-                <Label Text="Adult" Grid.Column="0" Grid.Row="1"/>
-                <Label Text="Child" Grid.Column="0" Grid.Row="2"/>
-                <Label Text="Teen" Grid.Column="0" Grid.Row="3"/>
-                <Label Text="Student" Grid.Column="0" Grid.Row="4"/>
+                <Label Text="Adult" Grid.Column="0" Grid.Row="1" HorizontalOptions="Center"/>
+                <Label Text="Child" Grid.Column="0" Grid.Row="2" HorizontalOptions="Center"/>
+                <Label Text="Teen" Grid.Column="0" Grid.Row="3" HorizontalOptions="Center"/>
+                <Label Text="Student" Grid.Column="0" Grid.Row="4" HorizontalOptions="Center"/>
+                <Label Text="Total" Grid.Column="0" Grid.Row="5" HorizontalOptions="Center"/>
 
-                <Label Text="5.00" Grid.Column="1" Grid.Row="1"/>
-                <Label Text="3.00" Grid.Column="1" Grid.Row="2"/>
-                <Label Text="4.00" Grid.Column="1" Grid.Row="3"/>
-                <Label Text="4.00" Grid.Column="1" Grid.Row="4"/>
+                <Label Text="5.00" Grid.Column="1" Grid.Row="1" HorizontalOptions="Center"/>
+                <Label Text="3.00" Grid.Column="1" Grid.Row="2" HorizontalOptions="Center"/>
+                <Label Text="4.00" Grid.Column="1" Grid.Row="3" HorizontalOptions="Center"/>
+                <Label Text="4.00" Grid.Column="1" Grid.Row="4" HorizontalOptions="Center"/>
 
-                <Picker x:Name="PaymentPickerAdult" Grid.Column="2" Grid.Row="1"/>
-                <Picker x:Name="PaymentPickerChild" Grid.Column="2" Grid.Row="2"/>
-                <Picker x:Name="PaymentPickerTeen" Grid.Column="2" Grid.Row="3"/>
-                <Picker x:Name="PaymentPickerStudent" Grid.Column="2" Grid.Row="4"/>
+                <Picker x:Name="PaymentPickerAdult" Grid.Column="2" Grid.Row="1" HorizontalOptions="Center"/>
+                <Picker x:Name="PaymentPickerChild" Grid.Column="2" Grid.Row="2" HorizontalOptions="Center"/>
+                <Picker x:Name="PaymentPickerTeen" Grid.Column="2" Grid.Row="3" HorizontalOptions="Center"/>
+                <Picker x:Name="PaymentPickerStudent" Grid.Column="2" Grid.Row="4" HorizontalOptions="Center"/>
 
-                <Entry x:Name="AdultCalc" Grid.Column="3" Grid.Row="1" IsEnabled="False" BackgroundColor="LightSlateGray"/>
-                <Entry x:Name="ChildtCalc" Grid.Column="3" Grid.Row="2" IsEnabled="False" BackgroundColor="LightSlateGray"/>
-                <Entry x:Name="TeenCalc" Grid.Column="3" Grid.Row="3" IsEnabled="False" BackgroundColor="LightSlateGray"/>
-                <Entry x:Name="StudentCalc" Grid.Column="3" Grid.Row="4" IsEnabled="False" BackgroundColor="LightSlateGray"/>
-                <Entry x:Name="TotalCalc" Grid.Column="3" Grid.Row="5" IsEnabled="False" BackgroundColor="LightSlateGray"/>
+                <Entry x:Name="AdultCalc" Grid.Column="3" Grid.Row="1" IsEnabled="False" BackgroundColor="LightSkyBlue" FontAttributes="Bold" TextColor="White" Margin="10"/>
+                <Entry x:Name="ChildCalc" Grid.Column="3" Grid.Row="2" IsEnabled="False" BackgroundColor="LightSkyBlue" FontAttributes="Bold" TextColor="White" Margin="10"/>
+                <Entry x:Name="TeenCalc" Grid.Column="3" Grid.Row="3" IsEnabled="False" BackgroundColor="LightSkyBlue" FontAttributes="Bold" TextColor="White" Margin="10"/>
+                <Entry x:Name="StudentCalc" Grid.Column="3" Grid.Row="4" IsEnabled="False" BackgroundColor="LightSkyBlue" FontAttributes="Bold" TextColor="White" Margin="10"/>
+                <Entry x:Name="TotalCalc" Grid.Column="3" Grid.Row="5" IsEnabled="False" BackgroundColor="LightSkyBlue" FontAttributes="Bold" TextColor="White" Margin="10"/>
 
-                <Button x:Name="CheckBtn" Text="Check Price" Clicked="CheckBtn_Clicked" Grid.Column="2" Grid.Row="6" WidthRequest="15" HeightRequest="10"/>
-                <Button x:Name="ContineBtn" Text="Continue" Clicked="ContineBtn_Clicked" Grid.Column="3" Grid.Row="6" WidthRequest="10" HeightRequest="10"/>
+                <Button x:Name="CheckBtn" Text="Check Price" Clicked="CheckBtn_Clicked" Grid.Column="2" Grid.Row="6" WidthRequest="15" HeightRequest="15"/>
+                <Button x:Name="ContineBtn" Text="Continue" Clicked="ContineBtn_Clicked" Grid.Column="3" Grid.Row="6" WidthRequest="15" HeightRequest="15"/>
             </Grid>
         </StackLayout>
     </ScrollView>

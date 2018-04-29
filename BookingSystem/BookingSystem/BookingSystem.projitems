@@ -76,6 +76,10 @@
       <DependentUpon>EarlyMan.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Movies\Halloween.xaml.cs">
+      <DependentUpon>Halloween.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Movies\Incredibles.xaml.cs">
       <DependentUpon>Incredibles.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -314,7 +318,8 @@
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)TicketPage.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
+      <Generator>
+      </Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -325,6 +330,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)EnterDetailsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Movies\Halloween.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

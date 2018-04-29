@@ -33,5 +33,21 @@ namespace BookingSystem
         {
             Navigation.PushAsync(new StarWars());
         }
+        private void TapGestureRecognizer_AvengersTapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AvengersInfinityWar());
+        }
+        private void TapGestureRecognizer_JumanjiTapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Jumanji());
+        }
+        private void TapGestureRecognizer_IncrediblesTapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Incredibles());
+        }
+        private void TapGestureRecognizer_PeterRabbitTapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PeterRabbit());
+        }
     }
 }
