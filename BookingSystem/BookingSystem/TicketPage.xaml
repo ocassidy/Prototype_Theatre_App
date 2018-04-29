@@ -4,8 +4,8 @@
              x:Class="BookingSystem.TicketPage"
              Title="Ticket Page">
     <ScrollView>
-        <StackLayout>
-            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" RowSpacing="10" ColumnSpacing="10">
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Grid RowSpacing="5" ColumnSpacing="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -19,7 +19,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Type" Grid.Column="0" Grid.Row="0" FontAttributes="Bold"  HorizontalOptions="Center"/>
@@ -49,8 +49,8 @@
                 <Entry x:Name="StudentCalc" Grid.Column="3" Grid.Row="4" IsEnabled="False" BackgroundColor="LightSkyBlue" FontAttributes="Bold" TextColor="White" Margin="10"/>
                 <Entry x:Name="TotalCalc" Grid.Column="3" Grid.Row="5" IsEnabled="False" BackgroundColor="LightSkyBlue" FontAttributes="Bold" TextColor="White" Margin="10"/>
 
-                <Button x:Name="CheckBtn" Text="Check Price" Clicked="CheckBtn_Clicked" Grid.Column="2" Grid.Row="6" WidthRequest="15" HeightRequest="15"/>
-                <Button x:Name="ContineBtn" Text="Continue" Clicked="ContineBtn_Clicked" Grid.Column="3" Grid.Row="6" WidthRequest="15" HeightRequest="15"/>
+                <Button x:Name="CheckBtn" Text="Check Price" Clicked="CheckBtn_Clicked" Grid.Column="2" Grid.Row="6"/>
+                <Button x:Name="ContineBtn" Text="Continue" Clicked="ContineBtn_Clicked" Grid.Column="3" Grid.Row="6"/>
             </Grid>
         </StackLayout>
     </ScrollView>

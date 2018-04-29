@@ -18,6 +18,7 @@ namespace BookingSystem.Movies
             LocationPick.Items.Add("Coleraine");
             LocationPick.Items.Add("Strabane");
             LocationPick.Items.Add("Limavady");
+            LocationPick.SelectedIndex = 0;
         }
         private void TicketBtn_Clicked(object sender, EventArgs e)
         {

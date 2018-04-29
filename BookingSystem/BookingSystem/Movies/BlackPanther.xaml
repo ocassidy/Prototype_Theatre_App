@@ -35,9 +35,9 @@
                        and an American secret agent, to prevent Wakanda from being dragged into a world war." Grid.Column="1" Grid.Row="2" Margin="5"/>
                 <Label Text="Rating: 5" Grid.Column="1" Grid.Row="3" Margin="5"/>
 
-                <Label x:Name="LocationLabel" Text="Location:" Grid.Column="0" Grid.Row="4"/>
-                <Label x:Name="DateLabel" Text="Date:" Grid.Column="0" Grid.Row="5"/>
-                <Label x:Name="TimeLabel" Text="Time:" Grid.Column="0" Grid.Row="6"/>
+                <Label x:Name="LocationLabel" Text="Location:" Grid.Column="0" Grid.Row="4" Margin="5"/>
+                <Label x:Name="DateLabel" Text="Date:" Grid.Column="0" Grid.Row="5" Margin="5"/>
+                <Label x:Name="TimeLabel" Text="Time:" Grid.Column="0" Grid.Row="6" Margin="5"/>
                 
                 <Picker x:Name="LocationPick"  Grid.Column="1" Grid.Row="4"/>
                 <DatePicker x:Name="DatePick" Grid.Column="1" Grid.Row="5"/>

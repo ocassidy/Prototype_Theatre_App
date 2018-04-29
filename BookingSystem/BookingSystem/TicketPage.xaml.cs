@@ -20,24 +20,28 @@ namespace BookingSystem
             PaymentPickerAdult.Items.Add("3");
             PaymentPickerAdult.Items.Add("4");
             PaymentPickerAdult.Items.Add("5");
+            PaymentPickerAdult.SelectedIndex = 0;
 
             PaymentPickerChild.Items.Add("1");
             PaymentPickerChild.Items.Add("2");
             PaymentPickerChild.Items.Add("3");
             PaymentPickerChild.Items.Add("4");
             PaymentPickerChild.Items.Add("5");
+            PaymentPickerChild.SelectedIndex = 0;
 
             PaymentPickerTeen.Items.Add("1");
             PaymentPickerTeen.Items.Add("2");
             PaymentPickerTeen.Items.Add("3");
             PaymentPickerTeen.Items.Add("4");
             PaymentPickerTeen.Items.Add("5");
+            PaymentPickerTeen.SelectedIndex = 0;
 
             PaymentPickerStudent.Items.Add("1");
             PaymentPickerStudent.Items.Add("2");
             PaymentPickerStudent.Items.Add("3");
             PaymentPickerStudent.Items.Add("4");
             PaymentPickerStudent.Items.Add("5");
+            PaymentPickerStudent.SelectedIndex = 0;
         }
 
         private async void ContineBtn_Clicked(object sender, EventArgs e)
